@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ title or "我的作品集" }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+  <nav class="p-4 bg-gray-800">
+    <a href="/" class="hover:underline">首頁</a>
+  </nav>
+  <main class="flex-1 p-8">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="p-4 text-center text-sm text-gray-500">
+    © 2025 陳胤元
+  </footer>
+</body>
+</html>
+
+
